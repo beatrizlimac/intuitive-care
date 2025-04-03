@@ -13,7 +13,7 @@ O projeto é organizado em três repositórios, cada um com responsabilidades es
 
 
 ## Repositórios
-__1. [ic-backend](https://github.com/beatrizlimac/ic-frontend/tree/main):__  
+__1. [ic-backend](https://github.com/beatrizlimac/ic-backend/tree/main):__  
 - __Descrição:__
 Contém a API Python (desenvolvida com Flask) que expõe uma rota para realizar a busca textual na lista de cadastros de operadoras.
 Também inclui dois scripts auxiliares:
@@ -25,7 +25,7 @@ Também inclui dois scripts auxiliares:
 - __Containerização:__
 Possui um Dockerfile que constrói a imagem Docker do backend.
 
-__2. [ic-frontend](https://github.com/beatrizlimac/ic-backend/tree/main):__  
+__2. [ic-frontend](https://github.com/beatrizlimac/ic-frontend/tree/main):__  
 - __Descrição:__
 Contém a aplicação web construída com Vue.js (usando Vite) que consome a API do backend. A interface permite ao usuário inserir um termo de busca e visualizar os registros mais relevantes dos cadastros de operadoras.
 
