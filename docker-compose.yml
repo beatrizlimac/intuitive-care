@@ -1,0 +1,39 @@
+# version: "3.8"
+services:
+  backend:
+    build: ./ic-backend
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./ic-backend:/app
+    environment:
+      - ENV=development
+    depends_on:
+      - mysql
+
+  frontend:
+    build: ./ic-frontend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./ic-frontend:/app
+    environment:
+      - NODE_ENV=development
+
+  mysql:
+    image: mysql:8
+    platform: linux/amd64
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ans_data
+      #MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./ic-backend/database:/var/lib/mysql-files
+    command: --secure-file-priv=""
+
+volumes:
+  mysql_data:
