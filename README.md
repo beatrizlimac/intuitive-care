@@ -68,6 +68,7 @@ docker-compose up --build
 Esse comando irá:
   - Construir e iniciar o container do ic-backend.
   - Construir e iniciar o container do ic-frontend.
+  - Construir e iniciar o container do mysql.
 
 __3. Acessando os serviços:__  
 
