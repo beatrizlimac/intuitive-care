@@ -39,7 +39,7 @@ Também contém um arquivo .gitignore configurado para ignorar as pastas dos rep
 
 - __Principais arquivos:__
 
-   - `docker-compose.yml:` Define e inicia os containers para o backend e o frontend.
+   - `docker-compose.yml:` Define e inicia os containers para o backend, para o frontend e para o mysql.
 
    - `.gitignore:` Configurado para ignorar arquivos e pastas desnecessárias ou geradas automaticamente.
 
@@ -84,6 +84,13 @@ __3. Acessando os serviços:__
   Acesse a interface em:
   ```
   http://localhost:5173/
+  ```
+
+- __Postman:__
+
+  Acesse a coleção do Postman no diretório:
+  ```
+  intuitive-care/intuitive-care.postman_collection.json
   ```
 
 
