@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "161d81d8-bc07-48f0-b1d4-e6517ed40503",
+		"name": "intuitive-care",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43652147",
+		"_collection_link": "https://beatrizlima-2022797.postman.co/workspace/Beatriz-Lima's-Workspace~32baea29-37f6-4371-8619-fb7b805fd505/collection/43652147-161d81d8-bc07-48f0-b1d4-e6517ed40503?action=share&source=collection_link&creator=43652147"
+	},
+	"item": [
+		{
+			"name": "Pesquisa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/?q=saúde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "saúde"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
